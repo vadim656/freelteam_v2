@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.05em;
+  overflow-x: hidden;
+}
+
+.bord {
+    @apply border border-[red] ;
+  }
+
+
+
+.font-16 {
+  @apply text-[16px] text-[#48484a];
+}
+
+.font-18 {
+  @apply text-[18px] text-[#48484a];
+} 
+
+.font-20 {
+  @apply text-[20px] text-[#48484a];
+}
+
+
+.font-55 {
+  @apply text-[55px] text-[#232323];
+}
+
+.button {
+  @apply font-20 font-bold flex justify-center items-center bg-[#f3b643] w-[256px] h-[54px] rounded-[5px];
+}
