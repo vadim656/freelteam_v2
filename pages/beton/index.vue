@@ -9,11 +9,10 @@
           class=" flex flex-col items-center sm:items-start gap-4 sm:gap-8 sm:order-1 order-2"
         >
           <h1 class=" text-xl  sm:text-6xl  font-black mt-8 sm:mt-0">
-            Дизайн проекты
+            Бетон
           </h1>
           <span class="text-xs sm:text-xl">
-           Дом, ресторан, отель под ключ. <br>
-Собственное производство.
+            От производителя
           </span>
           <button class="button !text-[black]" @click="form.view = true">
             Оставить заявку
@@ -49,17 +48,15 @@
         </div>
       </div>
     </section>
-    <About />
     <section>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-12">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
         <div
           v-for="(item, i) in category"
           :key="i"
           class="flex flex-col gap-4 rounded-md"
         >
-          <div class="flex flex-col gap-4">
-            <div class="relative">
-              <NuxtLink
+          <div class="relative">
+            <NuxtLink
               :to="`${item.url}`"
               class="absolute bottom-4 right-4 z-[2] !text-white blur_button w-60 flex justify-center py-6 text-4xl rounded-md"
             >
@@ -70,14 +67,6 @@
               :src="item.img"
               alt=""
             />
-            </div>
-            <div class="flex">
-              <div class="w-1/3"></div>
-              <NuxtLink :to="`${item.url}`" class="flex justify-end cursor-pointer font-bold text-xl text-right w-2/3">
-              {{ item.desc }}
-            </NuxtLink>
-            </div>
-            
           </div>
         </div>
       </div>
@@ -140,7 +129,7 @@
 </template>
 
 <script>
-import About from '../components/Main/About.vue'
+import About from '../../components/Main/About.vue'
 
 import axios from 'axios'
 
@@ -151,40 +140,25 @@ export default {
     return {
       category: [
         {
-          name: 'Дизайн',
-          desc: 'Дизайн проекты домов, ресторанов, отелей, квартир под ключ',
-          url: '/404',
-          img: 'http://app.freelteam.ru/wp-content/uploads/2022/06/main1.jpg'
+          name: 'Раковины',
+          url: '/shells',
+          img: require('~/static/img/main_cat1.jpg')
         },
         {
-          name: 'Декор',
+          name: 'Столешницы',
           desc: 'Авторский декор из бетона, посуда, вазы, салатницы',
-          url: '/404',
-          img: 'http://app.freelteam.ru/wp-content/uploads/2022/06/main2.jpg'
+          url: '/countertop',
+          img: require('~/static/img/main_cat2.jpg')
         },
         {
-          name: 'Бетон',
-          desc: 'Раковины, столешницы, кашпо, панели',
-          url: '/beton',
-          img: 'http://app.freelteam.ru/wp-content/uploads/2022/06/main3.jpg'
+          name: 'Кашпо',
+          url: '/cashpo',
+          img: require('~/static/img/main_cat3.jpg')
         },
         {
-          name: 'Дерево',
-          desc: 'Мебель, панели, лестницы из натурального дерева ',
-          url: '/404',
-          img: 'http://app.freelteam.ru/wp-content/uploads/2022/06/main4.jpg'
-        },
-        {
-          name: 'Металл',
-          desc: 'Навесы, лестницы, перголы, мангалы',
-          url: '/404',
-          img: 'http://app.freelteam.ru/wp-content/uploads/2022/06/main5.jpg'
-        },
-        {
-          name: 'Кровля',
-          desc: '',
-          url: '/404',
-          img: 'http://app.freelteam.ru/wp-content/uploads/2022/06/main6.jpg'
+          name: 'Панели',
+          url: '/plates',
+          img: require('~/static/img/main_cat4.jpg')
         }
       ],
       form: {

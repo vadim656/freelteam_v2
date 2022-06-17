@@ -11,10 +11,12 @@
           <h1
             class=" text-xl  sm:text-6xl  font-black mt-8 sm:mt-0 flex justify-start text-left  uppercase"
           >
-            БЕТОНЫЕ ПАНЕЛИ <br>
-            И ПЛИТКА  
+            БЕТОНЫЕ ПАНЕЛИ <br />
+            И ПЛИТКА
           </h1>
-          <h4 class="text-center sm:text-left">ИЗ ДИЗАЙНЕРСКОГО БЕТОНА РУЧНОЙ РАБОТЫ</h4>
+          <h4 class="text-center sm:text-left">
+            ИЗ ДИЗАЙНЕРСКОГО БЕТОНА РУЧНОЙ РАБОТЫ
+          </h4>
           <span class="text-xl">
             От производителя
           </span>
@@ -42,7 +44,7 @@
           <div class="relative">
             <img
               class="w-[290px] h-auto sm:w-[720px] sm:h-[500px] object-cover rounded-md"
-              src="/img/countertop/main.jpg"
+              src="http://app.freelteam.ru/wp-content/uploads/2022/06/Rectangle219.jpg"
               alt=""
             />
             <div
@@ -57,18 +59,31 @@
     <section class="container w-full flex flex-col gap-8 justify-center">
       <headerh-3>РЕАЛИЗУЕМ ЛЮБУЮ ДИЗАЙНЕРСКУЮ ИДЕЮ</headerh-3>
       <headerh-4
-        >Благодаря собственному производству мы можем изготовить бетонные панели и плитку <span class="font-bold">любой формы, толщины и ширины</span>
+        >Благодаря собственному производству мы можем изготовить бетонные панели
+        и плитку <span class="font-bold">любой формы, толщины и ширины</span>
       </headerh-4>
 
       <swiper :options="swiperOption" class="w-full">
         <swiper-slide>
-          <img src="/img/countertop/slider_1_1.jpg" alt="" class="rounded-md" />
+          <img
+            src="http://app.freelteam.ru/wp-content/uploads/2022/06/Rectangle188.jpg"
+            alt=""
+            class="rounded-md"
+          />
         </swiper-slide>
         <swiper-slide>
-          <img src="/img/countertop/slider_1_1.jpg" alt="" class="rounded-md" />
+          <img
+            src="http://app.freelteam.ru/wp-content/uploads/2022/06/Rectangle188.jpg"
+            alt=""
+            class="rounded-md"
+          />
         </swiper-slide>
         <swiper-slide>
-          <img src="/img/countertop/slider_1_1.jpg" alt="" class="rounded-md" />
+          <img
+            src="http://app.freelteam.ru/wp-content/uploads/2022/06/Rectangle188.jpg"
+            alt=""
+            class="rounded-md"
+          />
         </swiper-slide>
         <div slot="button-prev" class="swiper-button-prev"></div>
         <div slot="button-next" class="swiper-button-next"></div>
@@ -81,43 +96,41 @@
       </span>
     </section>
 
-    <section>
-      <base-color-2/>
-    </section>
-
-    <section class="container w-full flex flex-col gap-8 justify-center">
-      <headerh-3
-        >ВОПЛОТИМ <span class="text-[#C4AC7B]">ЛЮБУЮ ИДЕЮ И ФОРМУ</span>
-      </headerh-3>
-      <headerh-4>С использованием металла, дерева и стекла!</headerh-4>
-      <swiper :options="swiperOption2" class="w-full !px-10">
-        <swiper-slide>
-          <img src="/img/countertop/slider_2_1.jpg" alt="" class="rounded-md" />
-        </swiper-slide>
-        <swiper-slide>
-          <img src="/img/countertop/slider_2_2.jpg" alt="" class="rounded-md" />
-        </swiper-slide>
-        <swiper-slide>
-          <img src="/img/countertop/slider_2_3.jpg" alt="" class="rounded-md" />
-        </swiper-slide>
-        <swiper-slide>
-          <img src="/img/countertop/slider_2_1.jpg" alt="" class="rounded-md" />
-        </swiper-slide>
-        <div slot="button-prev" class="swiper-button-prev !mr-20"></div>
-        <div slot="button-next" class="swiper-button-next !ml-20"></div>
-      </swiper>
-    </section>
-
     <section class="container flex flex-col gap-8">
-      <headerh-3
-        >СТОЛЕШНИЦА ИЗ БЕТОНА СТОИТ ДЕШЕВЛЕ ЧЕМ ИЗ ДЕРЕВА И КАМНЯ</headerh-3
-      >
+      <headerh-3>СОТРУДНИЧАЕМ С ДИЗАЙНЕРАМИ НА БОНУСНЫХ УСЛОВИЯХ</headerh-3>
       <reqv-1 />
     </section>
 
+    <section>
+      <base-color-2 />
+    </section>
+
+    <section class="container w-full flex flex-col gap-8 justify-center">
+      <headerh-3>ЛЮБОЙ РАЗМЕР </headerh-3>
+
+      <div class="w-full flex flex-col sm:flex-row justify-center gap-12">
+        <div class="flex flex-col gap-4 justify-end">
+          <img
+            src="http://app.freelteam.ru/wp-content/uploads/2022/06/Rectangle224.jpg"
+            class="rounded-md"
+            alt=""
+          />
+          <span class="text-xl font-bold flex justify-end">До 10х10 мм</span>
+        </div>
+        <div class="flex flex-col gap-4 justify-end">
+          <img
+            src="http://app.freelteam.ru/wp-content/uploads/2022/06/Rectangle223.jpg"
+            class="rounded-md"
+            alt=""
+          />
+          <span class="text-xl font-bold flex justify-end">До 120х250 мм</span>
+        </div>
+      </div>
+    </section>
+
     <section class="container w-full flex flex-col gap-8 justify-center">
       <headerh-3
-        ><span class="text-[#C4AC7B]">УХАЖИВАТЬ</span> ЗА СТОЛЕШНИЦЕЙ ИЗ
+        ><span class="text-[#C4AC7B]">УХАЖИВАТЬ</span> ЗА ИЗДЕЛИЯМИ ИЗ
         ДИЗАЙНЕРСКОГО БЕТОНА
         <span class="text-[#C4AC7B]">ЛЕГКО!</span>
       </headerh-3>
@@ -128,66 +141,64 @@
           :key="i"
           class="flex flex-col justify-center items-center gap-4"
         >
-          <img :src="item.img" alt="" class="w-[200px] sm:w-[300px] h-auto object-cover" />
+          <img
+            :src="item.img"
+            alt=""
+            class="w-[200px] sm:w-[300px] h-auto object-cover"
+          />
           <span class="text-center text-xs sm:text-xl">{{ item.name }}</span>
         </div>
       </div>
     </section>
 
-    <section class="container">
-      <video-frame>
-        <iframe
-          width="1200"
-          height="700"
-          src="https://www.youtube.com/embed/XiDWNpwqLWs"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </video-frame>
+    <section class="container w-full flex flex-col gap-8 justify-center">
+      <headerh-3
+        ><span class="text-[#C4AC7B]">15 ЛЕТ</span> ГАРАНТИИ
+        <span class="text-[#C4AC7B]">ЛЕГКО!</span>
+      </headerh-3>
+      <headerh-4
+        >Наш бетон имеет максимальный уровень водонепроницаемости W18 по ГОСТ.
+        Отталкивает воду и не боится морозов до -30 с</headerh-4
+      >
     </section>
 
     <section class="container w-full flex flex-col gap-8 justify-center">
       <headerh-3>НАШИ СТОЛЕШНИЦЫ УКРАШАЮТ САМЫЕ МОДНЫЕ ЗАВЕДЕНИЯ</headerh-3>
       <headerh-4>В Краснодарском крае</headerh-4>
-      <swiper :options="swiperOption3" class="w-full !px-10">
+      <swiper :options="swiperOption4" class="w-full !px-10">
         <swiper-slide>
-          <img src="/img/cashpo/slider_3_1.png" alt="" class="rounded-md" />
+          <img
+            src="http://app.freelteam.ru/wp-content/uploads/2022/06/Rectangle168.jpg"
+            alt=""
+            class="rounded-md"
+          />
         </swiper-slide>
         <swiper-slide>
-          <img src="/img/cashpo/slider_3_2.png" alt="" class="rounded-md" />
+          <img
+            src="http://app.freelteam.ru/wp-content/uploads/2022/06/Rectangle168.jpg"
+            alt=""
+            class="rounded-md"
+          />
         </swiper-slide>
         <swiper-slide>
-          <img src="/img/cashpo/slider_3_3.png" alt="" class="rounded-md" />
+          <img
+            src="http://app.freelteam.ru/wp-content/uploads/2022/06/Rectangle168.jpg"
+            alt=""
+            class="rounded-md"
+          />
         </swiper-slide>
         <swiper-slide>
-          <img src="/img/cashpo/slider_3_1.png" alt="" class="rounded-md" />
-        </swiper-slide>
-        <swiper-slide>
-          <img src="/img/cashpo/slider_3_2.png" alt="" class="rounded-md" />
-        </swiper-slide>
-        <swiper-slide>
-          <img src="/img/cashpo/slider_3_3.png" alt="" class="rounded-md" />
+          <img
+            src="http://app.freelteam.ru/wp-content/uploads/2022/06/Rectangle168.jpg"
+            alt=""
+            class="rounded-md"
+          />
         </swiper-slide>
         <div slot="button-prev" class="swiper-button-prev !mr-20"></div>
         <div slot="button-next" class="swiper-button-next !ml-20"></div>
       </swiper>
     </section>
 
-    <section class="container w-full flex flex-col gap-8 justify-center">
-      <headerh-3>Особенности дизайнерского бетона</headerh-3>
-      <div class="flex flex-col sm:flex-row justify-between gap-4">
-        <div
-          v-for="(item, i) in osobennosti"
-          :key="i"
-          class="flex flex-col justify-center items-center gap-4"
-        >
-          <img :src="item.img" alt=""  class="w-[200px] sm:w-[300px] h-auto object-cover"/>
-          <span class="text-center text-xs sm:text-xl">{{ item.name }}</span>
-        </div>
-      </div>
-    </section>
     <section class="container">
       <reqv-2 />
     </section>
@@ -246,6 +257,51 @@
             </div>
           </form>
         </div>
+      </div>
+    </section>
+
+    <section class="container w-full flex flex-col gap-8 justify-center">
+      <headerh-3>НАШИ КАШПО УКРАШАЮТ САМЫЕ МОДНЫЕ ЗАВЕДЕНИЯ</headerh-3>
+      <headerh-4>С использованием металла, дерева и даже стекла</headerh-4>
+      <swiper :options="swiperOption3" class="w-full !px-10">
+        <swiper-slide>
+          <img src="/img/cashpo/slider_3_1.png" alt="" class="rounded-md" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="/img/cashpo/slider_3_2.png" alt="" class="rounded-md" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="/img/cashpo/slider_3_3.png" alt="" class="rounded-md" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="/img/cashpo/slider_3_1.png" alt="" class="rounded-md" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="/img/cashpo/slider_3_2.png" alt="" class="rounded-md" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="/img/cashpo/slider_3_3.png" alt="" class="rounded-md" />
+        </swiper-slide>
+        <div slot="button-prev" class="swiper-button-prev !mr-20"></div>
+        <div slot="button-next" class="swiper-button-next !ml-20"></div>
+      </swiper>
+    </section>
+
+    <section class="container w-full flex flex-col gap-8 justify-center">
+      <headerh-3>РЕАЛИЗУЕМ ПРОЕКТ ПОД КЛЮЧ</headerh-3>
+      <headerh-4
+        >Разработаем дизайн, изготовим, доставим и выполним монтаж</headerh-4
+      >
+      <div class="frame_blc">
+        <iframe
+          width="1280"
+          height="700"
+          src="https://www.youtube.com/embed/N0cD5M0_1yE"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
     </section>
     <section class="container w-full flex flex-col gap-8 justify-center">
@@ -370,6 +426,17 @@ export default {
         slidesPerView: 3,
         spaceBetween: 50,
         slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
+      },
+      swiperOption4: {
+        slidesPerView: 1,
+        spaceBetween: 50,
+        slidesPerGroup: 1,
         loop: true,
         loopFillGroupWithBlank: true,
         navigation: {
