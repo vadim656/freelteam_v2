@@ -165,7 +165,7 @@ export default {
         {
           name: 'Декор',
           desc: 'Авторский декор из бетона, посуда, вазы, салатницы',
-          url: '/404',
+          url: '/decor',
           img: 'https://app.freelteam.ru/wp-content/uploads/2022/06/main2.jpg'
         },
         

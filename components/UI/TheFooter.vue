@@ -10,8 +10,8 @@
           alt=""
         />
         <div class="flex gap-4">
-          <a href="/"> <img src="../../assets/img/vk-logo.png" alt=""/></a>
-          <a href="/"> <img src="../../assets/img/ok-logo.png" alt=""/></a>
+          <a href="https://vk.com/freelteam20"> <img src="../../assets/img/vk-logo.png" alt=""/></a>
+          <a href="https://ok.ru/profile/586055948015"> <img src="../../assets/img/ok-logo.png" alt=""/></a>
           <a href="/"
             ><img src="../../assets/img/telega-logo.pnf.png" alt=""
           /></a>
