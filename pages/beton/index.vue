@@ -172,7 +172,7 @@ export default {
     methods: {
     getTeelegrammToMain () {
       const fullMessege =
-        'Заявка с главной формы' +
+        'Заявка с главной формы (/beton)' +
         '\n' +
         'Телефон:  ' +
         this.form.phone +

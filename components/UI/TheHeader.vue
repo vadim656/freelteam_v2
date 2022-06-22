@@ -30,10 +30,10 @@
             class="cursor-pointer hover:underline hover:underline-offset-2"
             >Прайс</nuxt-link
           >
-          <nuxt-link
-            to="/"
+          <NuxtLink
+            to="/conts"
             class="cursor-pointer hover:underline hover:underline-offset-2"
-            >Контакты</nuxt-link
+            >Контакты</NuxtLink
           >
         </ul>
       </div>

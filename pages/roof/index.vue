@@ -11,17 +11,18 @@
           <h1
             class=" text-xl  sm:text-6xl  font-black mt-8 sm:mt-0 flex justify-start text-left  uppercase"
           >
-            БЕТОНЫЕ ПАНЕЛИ <br />
-            И ПЛИТКА
+            КРОВЛЯ
           </h1>
-          <h4 class="text-center sm:text-left">
-            ИЗ ДИЗАЙНЕРСКОГО БЕТОНА РУЧНОЙ РАБОТЫ
+          <h4 class="text-center sm:text-left leading-6">
+            ГИДРОИЗОЛЯЦИЯ ПЛОСКОЙ КРОВЛИ<br />
+            БИТУМНО-ЭМУЛЬСИОННОЙ МАСТИКОЙ<br />
+            “СИНЗАТИМ” И “БИТУМЕКС” ОТ 1240 РУБ/м2
           </h4>
           <span class="text-xl">
             От производителя
           </span>
           <button class="button !text-[black]" @click="form.view = true">
-            Оставить заявку
+            Рассчитать стоимость
           </button>
           <div
             class="flex justify-start items-center gap-16 w-full text-xs sm:text-xl"
@@ -44,7 +45,7 @@
           <div class="relative">
             <img
               class="w-[290px] h-auto sm:w-[720px] sm:h-[500px] object-cover rounded-md"
-              src="https://app.freelteam.ru/wp-content/uploads/2022/06/Rectangle219.jpg"
+              src="/img/roof/Rectangle264.jpg"
               alt=""
             />
             <div
@@ -56,151 +57,193 @@
     </section>
     <!-- 1 -->
 
-    <section class="container w-full flex flex-col gap-8 justify-center">
-      <headerh-3>РЕАЛИЗУЕМ ЛЮБУЮ ДИЗАЙНЕРСКУЮ ИДЕЮ</headerh-3>
-      <headerh-4
-        >Благодаря собственному производству мы можем изготовить бетонные панели
-        и плитку <span class="font-bold">любой формы, толщины и ширины</span>
-      </headerh-4>
-
-      <swiper :options="swiperOption" class="w-full">
-        <swiper-slide>
-          <img
-            src="http://app.freelteam.ru/wp-content/uploads/2022/06/Rectangle188.jpg"
-            alt=""
-            class="rounded-md"
-          />
-        </swiper-slide>
-        <swiper-slide>
-          <img
-            src="http://app.freelteam.ru/wp-content/uploads/2022/06/Rectangle188.jpg"
-            alt=""
-            class="rounded-md"
-          />
-        </swiper-slide>
-        <swiper-slide>
-          <img
-            src="http://app.freelteam.ru/wp-content/uploads/2022/06/Rectangle188.jpg"
-            alt=""
-            class="rounded-md"
-          />
-        </swiper-slide>
-        <div slot="button-prev" class="swiper-button-prev"></div>
-        <div slot="button-next" class="swiper-button-next"></div>
-      </swiper>
-
-      <span
-        class="w-full flex justify-center mx-auto text-center max-w-[700px] mt-4"
-      >
-        Срок изготовления 30 дней
-      </span>
-    </section>
-
-    <section class="container flex flex-col gap-8">
-      <headerh-3>СОТРУДНИЧАЕМ С ДИЗАЙНЕРАМИ НА БОНУСНЫХ УСЛОВИЯХ</headerh-3>
-      <reqv-1 />
-    </section>
-
-    <section>
-      <base-color-2 />
-    </section>
-
-    <section class="container w-full flex flex-col gap-8 justify-center">
-      <headerh-3>ЛЮБОЙ РАЗМЕР </headerh-3>
-
-      <div class="w-full flex flex-col sm:flex-row justify-center gap-12">
-        <div class="flex flex-col gap-4 justify-end">
-          <img
-            src="http://app.freelteam.ru/wp-content/uploads/2022/06/Rectangle224.jpg"
-            class="rounded-md"
-            alt=""
-          />
-          <span class="text-xl font-bold flex justify-end">До 10х10 мм</span>
-        </div>
-        <div class="flex flex-col gap-4 justify-end">
-          <img
-            src="http://app.freelteam.ru/wp-content/uploads/2022/06/Rectangle223.jpg"
-            class="rounded-md"
-            alt=""
-          />
-          <span class="text-xl font-bold flex justify-end">До 120х250 мм</span>
-        </div>
+    <section class="container w-full flex flex-col gap-8 justify-center ">
+      <headerh-3>КРОВЛЯ ДО/ПОСЛЕ ПОКРЫТИЯ МАСТИКОЙ</headerh-3>
+      <headerh-4>Без швов и стыков. Нет швов - нет протечек! </headerh-4>
+      <div class="flex justify-between flex-col sm:flex-row gap-8 sm:gap-12">
+        <img
+          src="https://app.freelteam.ru/wp-content/uploads/2022/06/Rectangle268.jpg"
+          alt=""
+          class="rounded-md max-w-[620px] object-cover"
+        />
+        <img
+          src="https://app.freelteam.ru/wp-content/uploads/2022/06/Rectangle269.jpg"
+          alt=""
+          class="rounded-md max-w-[620px] object-cover"
+        />
       </div>
     </section>
 
-    <section class="container w-full flex flex-col gap-8 justify-center">
-      <headerh-3
-        ><span class="text-[#C4AC7B]">УХАЖИВАТЬ</span> ЗА ИЗДЕЛИЯМИ ИЗ
-        ДИЗАЙНЕРСКОГО БЕТОНА
-        <span class="text-[#C4AC7B]">ЛЕГКО!</span>
-      </headerh-3>
-      <headerh-4>Благодаря защитной пропитке бетона</headerh-4>
-      <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
-        <div
-          v-for="(item, i) in osobennosti2"
-          :key="i"
-          class="flex flex-col justify-center items-center gap-4"
+    <section class="bg-neutral-100 py-24">
+      <div class="container w-full flex flex-col gap-8 justify-center">
+        <headerh-3
+          >ИДЕАЛЬНО ПОДХОДИТ ДЛЯ РЕМОНТА СТАРОГО РУЛОННОГО ПОКРЫТИЯ</headerh-3
         >
-          <img
-            :src="item.img"
-            alt=""
-            class="w-[200px] sm:w-[300px] h-auto object-cover"
-          />
-          <span class="text-center text-xs sm:text-xl">{{ item.name }}</span>
+        <div class="grid grid-cols-2 sm:grid-cols-5 gap-4 items-start">
+          <div
+            v-for="(item, i) in osobennosti"
+            :key="i"
+            class="flex flex-col justify-center items-center gap-4"
+          >
+            <img
+              :src="item.img"
+              alt=""
+              class="w-full sm:w-[240px] h-auto  sm:h-[240px] object-cover"
+            />
+            <span class="text-center font-bold px-2">{{ item.name }}</span>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section class="container w-full flex flex-col gap-8 justify-center ">
+      <headerh-3>ДЕШЕВЛЕ И БЫСТРЕЕ КАПИТАЛЬНОГО РЕМОНТА</headerh-3>
+      <div
+        class="flex flex-col sm:flex-row justify-between  items-center gap-8 sm:gap-0"
+      >
+        <div class="w-full sm:w-2/5 grid grid-cols-1 gap-8 pl-0 sm:pl-8">
+          <div class="flex gap-6 items-center">
+            <img
+              src="/img/roof/Ellipse13.png"
+              alt=""
+              class="w-[72px] h-auto object-cover"
+            />
+            <div class="flex flex-col gap-2">
+              <h4 class="font-bold text-xl">ЭКОНОМИЯ ДО 2 РАЗ</h4>
+              <span class="text-xs sm:text-base"
+                >Без демонтажа старого покрытия</span
+              >
+            </div>
+          </div>
+          <div class="flex gap-6 items-center">
+            <img
+              src="/img/roof/Ellipse14.png"
+              alt=""
+              class="w-[72px] h-auto object-cover"
+            />
+            <div class="flex flex-col gap-2">
+              <h4 class="font-bold text-xl">БЫСТРЫЙ РЕЗУЛЬТАТ</h4>
+              <span class="text-xs sm:text-base"
+                >Всего 5-7 дней и Ваша кровля прослужит еще минимум 15 лет</span
+              >
+            </div>
+          </div>
+          <div class="flex gap-6 items-center">
+            <img
+              src="/img/roof/Ellipse15.png"
+              alt=""
+              class="w-[72px] h-auto object-cover"
+            />
+            <div class="flex flex-col gap-2">
+              <h4 class="font-bold text-xl">100% НАДЕЖНОСТЬ</h4>
+              <span class="text-xs sm:text-base"
+                >Гидроизоляция без швов и сквозных отверстий</span
+              >
+            </div>
+          </div>
+          <div class="flex gap-6 items-center">
+            <img
+              src="/img/roof/Ellipse16.png"
+              alt=""
+              class="w-[72px] h-auto object-cover"
+            />
+            <div class="flex flex-col gap-2">
+              <h4 class="font-bold text-xl">РАССРОЧКА ПЛАТЕЖА</h4>
+              <span class="text-xs sm:text-base"
+                >Согласование с учетом ваших возможностей</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="w-full sm:w-3/5 flex justify-end">
+          <img src="/img/roof/Rectangle282.jpg" alt="" class="rounded-md" />
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full relative">
+      <div class="container w-full flex flex-col gap-8 justify-center ">
+        <headerh-3
+          >МЫ ИСПОЛЬЗУЕМ <br />
+          <span class="text-[#C4AC7B]">2 ВИДА МАТЕРИАЛА</span></headerh-3
+        >
+        <headerh-4>Под разные задачи и бюджет</headerh-4>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
+          <div class="flex flex-col gap-4 text-left sm:text-right">
+            <h4 class="font-bold text-xl sm:pr-20">“СИНТАЗИМ”</h4>
+            <span class="sm:px-20 leading-6"
+              >Уникальная советская оборонная разработка не имеющая аналогов в
+              мире имеет применение от фундамента до кровли легко ложится на
+              сухую и мокрую основу устойчива к агрессивной химической
+              среде</span
+            >
+          </div>
+          <img
+            src="/img/roof/Rectangle299.jpg"
+            alt=""
+            class="rounded-md w-full sm:max-w-[588px] h-auto object-cover"
+          />
+
+          <img
+            src="/img/roof/Rectangle300.jpg"
+            alt=""
+            class="rounded-md w-full sm:max-w-[588px] h-auto object-cover"
+          />
+          <div class="flex flex-col gap-4">
+            <h4 class="font-bold text-xl sm:pl-20">“БИТУМЕКС”</h4>
+            <span class="sm:px-20 leading-6"
+              >Создана на основе высококачественных кровельных битумов,
+              модифицированных СБС полимерами.<br />
+              Применяется для устройства кровли и гидро-пароизоляции, а также
+              приклеивания рулонных кровельных материалов.<br />
+              Средство показывает устойчивость к воздействию температур до +100
+              С</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <img src="/img/03.png" alt="" class="absolute -top-[520px] right-0 z-[-2]" />
+    </section>
+
+    <section class="bg-neutral-100 py-24">
+      <div class="container flex flex-col gap-8">
+        <headerh-3>ПОМОЖЕМ ОПРЕДЕЛИТСЯ С МАТЕРИАЛОМ</headerh-3>
+        <reqv-1 />
       </div>
     </section>
 
     <section class="container w-full flex flex-col gap-8 justify-center">
       <headerh-3
-        ><span class="text-[#C4AC7B]">15 ЛЕТ</span> ГАРАНТИИ
-        <span class="text-[#C4AC7B]">ЛЕГКО!</span>
+        >ГДЕ ЕЩЁ ПРИМЕНЯЮТСЯ<br /><span class="text-[#C4AC7B]"
+          >НАШИ МАТЕРИАЛЫ</span
+        >
       </headerh-3>
-      <headerh-4
-        >Наш бетон имеет максимальный уровень водонепроницаемости W18 по ГОСТ.
-        Отталкивает воду и не боится морозов до -30 с</headerh-4
+      <div
+        class="grid grid-cols-1 sm:grid-cols-3 justify-center gap-12 items-start"
       >
-    </section>
-
-    <section class="container w-full flex flex-col gap-8 justify-center">
-      <headerh-3>НАШИ СТОЛЕШНИЦЫ УКРАШАЮТ САМЫЕ МОДНЫЕ ЗАВЕДЕНИЯ</headerh-3>
-      <headerh-4>В Краснодарском крае</headerh-4>
-      <swiper :options="swiperOption4" class="w-full !px-10">
-        <swiper-slide>
-          <img
-            src="http://app.freelteam.ru/wp-content/uploads/2022/06/Rectangle168.jpg"
-            alt=""
-            class="rounded-md"
-          />
-        </swiper-slide>
-        <swiper-slide>
-          <img
-            src="http://app.freelteam.ru/wp-content/uploads/2022/06/Rectangle168.jpg"
-            alt=""
-            class="rounded-md"
-          />
-        </swiper-slide>
-        <swiper-slide>
-          <img
-            src="http://app.freelteam.ru/wp-content/uploads/2022/06/Rectangle168.jpg"
-            alt=""
-            class="rounded-md"
-          />
-        </swiper-slide>
-        <swiper-slide>
-          <img
-            src="http://app.freelteam.ru/wp-content/uploads/2022/06/Rectangle168.jpg"
-            alt=""
-            class="rounded-md"
-          />
-        </swiper-slide>
-        <div slot="button-prev" class="swiper-button-prev !mr-20"></div>
-        <div slot="button-next" class="swiper-button-next !ml-20"></div>
-      </swiper>
-    </section>
-
-    <section class="container">
-      <reqv-2 />
+        <div class="flex flex-col justify-start items-center gap-4">
+          <img src="/img/roof/Ellipse17.png" alt="" /><span
+            class="px-4 sm:px-8 text-center text-sm sm:text-base"
+            >Защита металлических конструкций от коррозии и разрушения</span
+          >
+        </div>
+        <div class="flex flex-col justify-start items-center gap-4">
+          <img src="/img/roof/Ellipse17.png" alt="" /><span
+            class="px-4 sm:px-8 text-center text-sm sm:text-base"
+            >Гидроизоляция фундаментов, подвалов, хранилищ, подземных гаражей
+            стоянок, санузлов</span
+          >
+        </div>
+        <div class="flex flex-col justify-start items-center gap-4">
+          <img src="/img/roof/Ellipse17.png" alt="" /><span
+            class="px-4 sm:px-8 text-center text-sm sm:text-base"
+            >Наклеивание плоских изделий к любым поверхностям без
+            дополнительного подстилающей гидроизоляции (кафель, плитка,
+            линолеум, фанера и т.п.)</span
+          >
+        </div>
+      </div>
     </section>
 
     <!-- req1 -->
@@ -261,50 +304,6 @@
     </section>
 
     <section class="container w-full flex flex-col gap-8 justify-center">
-      <headerh-3>НАШИ КАШПО УКРАШАЮТ САМЫЕ МОДНЫЕ ЗАВЕДЕНИЯ</headerh-3>
-      <headerh-4>С использованием металла, дерева и даже стекла</headerh-4>
-      <swiper :options="swiperOption3" class="w-full !px-10">
-        <swiper-slide>
-          <img src="/img/cashpo/slider_3_1.png" alt="" class="rounded-md" />
-        </swiper-slide>
-        <swiper-slide>
-          <img src="/img/cashpo/slider_3_2.png" alt="" class="rounded-md" />
-        </swiper-slide>
-        <swiper-slide>
-          <img src="/img/cashpo/slider_3_3.png" alt="" class="rounded-md" />
-        </swiper-slide>
-        <swiper-slide>
-          <img src="/img/cashpo/slider_3_1.png" alt="" class="rounded-md" />
-        </swiper-slide>
-        <swiper-slide>
-          <img src="/img/cashpo/slider_3_2.png" alt="" class="rounded-md" />
-        </swiper-slide>
-        <swiper-slide>
-          <img src="/img/cashpo/slider_3_3.png" alt="" class="rounded-md" />
-        </swiper-slide>
-        <div slot="button-prev" class="swiper-button-prev !mr-20"></div>
-        <div slot="button-next" class="swiper-button-next !ml-20"></div>
-      </swiper>
-    </section>
-
-    <section class="container w-full flex flex-col gap-8 justify-center">
-      <headerh-3>РЕАЛИЗУЕМ ПРОЕКТ ПОД КЛЮЧ</headerh-3>
-      <headerh-4
-        >Разработаем дизайн, изготовим, доставим и выполним монтаж</headerh-4
-      >
-      <div class="frame_blc">
-        <iframe
-          width="1280"
-          height="700"
-          src="https://www.youtube.com/embed/N0cD5M0_1yE"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </section>
-    <section class="container w-full flex flex-col gap-8 justify-center">
       <headerh-3>Приглашаем в наш шоурум в краснодаре</headerh-3>
       <headerh-4
         >который находится по адресу: Монтажников 3/2, корпус 2</headerh-4
@@ -354,7 +353,7 @@ export default {
     VideoFrame,
     BaseColor2
   },
-  layout: 'Main',
+  layout: 'Krovlya',
   directives: {
     swiper: directive
   },
@@ -362,24 +361,24 @@ export default {
     return {
       osobennosti: [
         {
-          name: '15 лет гарантии',
-          img: '/img/all/Ellipse1.png'
+          name: 'Наноситься безогненым методом',
+          img: '/img/roof/Ellipse8.png'
         },
         {
-          name: 'Крепче гранита',
-          img: '/img/all/Ellipse2.png'
+          name: 'Практически не имеет запаха',
+          img: '/img/roof/Ellipse9.png'
         },
         {
-          name: 'Влаго и морозо-устойчивый',
-          img: '/img/all/Ellipse3.png'
+          name: 'Не требует спец подготовки поверхности',
+          img: '/img/roof/Ellipse10.png'
         },
         {
-          name: 'Всегда сохраняет свой цвет',
-          img: '/img/all/Ellipse4.png'
+          name: 'Высыхание в течении 12 часов',
+          img: '/img/roof/Ellipse11.png'
         },
         {
-          name: 'Легкий уход',
-          img: '/img/all/Ellipse5.png'
+          name: 'Наносится без дорогостоящего оборудования',
+          img: '/img/roof/Ellipse12.png'
         }
       ],
       osobennosti2: [

@@ -39,7 +39,7 @@
           <div class="relative">
             <img
               class="w-[290px] h-auto sm:w-[720px] sm:h-[500px] object-cover rounded-md"
-              src="/img/shells_main.jpg"
+              src="/img/main_main.jpg"
               alt=""
             />
             <div
@@ -151,40 +151,41 @@ export default {
     return {
       category: [
         {
+          name: 'Бетон',
+          desc: 'Раковины, столешницы, кашпо, панели',
+          url: '/beton',
+          img: 'https://app.freelteam.ru/wp-content/uploads/2022/06/main3.jpg'
+        },
+        {
           name: 'Дизайн',
           desc: 'Дизайн проекты домов, ресторанов, отелей, квартир под ключ',
           url: '/404',
-          img: 'http://app.freelteam.ru/wp-content/uploads/2022/06/main1.jpg'
+          img: 'https://app.freelteam.ru/wp-content/uploads/2022/06/main1.jpg'
         },
         {
           name: 'Декор',
           desc: 'Авторский декор из бетона, посуда, вазы, салатницы',
           url: '/404',
-          img: 'http://app.freelteam.ru/wp-content/uploads/2022/06/main2.jpg'
+          img: 'https://app.freelteam.ru/wp-content/uploads/2022/06/main2.jpg'
         },
-        {
-          name: 'Бетон',
-          desc: 'Раковины, столешницы, кашпо, панели',
-          url: '/beton',
-          img: 'http://app.freelteam.ru/wp-content/uploads/2022/06/main3.jpg'
-        },
+        
         {
           name: 'Дерево',
           desc: 'Мебель, панели, лестницы из натурального дерева ',
           url: '/404',
-          img: 'http://app.freelteam.ru/wp-content/uploads/2022/06/main4.jpg'
+          img: 'https://app.freelteam.ru/wp-content/uploads/2022/06/main4.jpg'
         },
         {
           name: 'Металл',
           desc: 'Навесы, лестницы, перголы, мангалы',
           url: '/404',
-          img: 'http://app.freelteam.ru/wp-content/uploads/2022/06/main5.jpg'
+          img: 'https://app.freelteam.ru/wp-content/uploads/2022/06/main5.jpg'
         },
         {
           name: 'Кровля',
           desc: '',
-          url: '/404',
-          img: 'http://app.freelteam.ru/wp-content/uploads/2022/06/main6.jpg'
+          url: '/roof',
+          img: 'https://app.freelteam.ru/wp-content/uploads/2022/06/main6.jpg'
         }
       ],
       form: {
